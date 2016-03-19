@@ -1,0 +1,104 @@
+name: 'Natural'
+scopeName: 'source.natural'
+fileTypes: [
+  'nat',
+  'nsp',
+  'nsn',
+  'nsl'
+]
+
+
+patterns:
+  [
+    include: '#comments'
+    include: '#vars'
+    include: '#strings'
+    include: '#data-definition'
+    include: '#placeholder'
+    include: '#trailing-space'
+    include: '#subroutine'
+    include: '#operators'
+    include: '#keywords'
+    include: '#date-and-time'
+    include: '#labels'
+    include: '#numbers'
+
+    include: '#keys'
+    include: '#system-vars'
+    include: '#variable-modifier'
+  ]
+
+repository:
+  comments:
+    name: 'comment.natural'
+    match: '(^\*.*$|\/\*.*$)'
+
+  vars:
+    name: 'variable.natural'
+    match: '\#[a-zA-Z0-9-]+'
+
+  numbers:
+    patterns:
+      [
+        {
+          name: 'constant.numeric.natural'
+          match: '(?<![\w-])[\+\-]?[0-9]+[,.]?[0-9]*(?![\w-])'
+        }
+        {
+          name: 'constant.numeric.hex.natural'
+          match: '([hH]?)\'[0-9a-fA-F]+\''
+          captures:
+            '1': { name: 'punctuation.definition.hex.natural' }
+        }
+      ]
+
+  strings:
+    patterns:
+      [
+        {
+          name: 'string.natural'
+          begin: '([uU]?)\''
+          beginCaptures:
+            {
+              '1': { name: 'punctuation.definition.string.unicode.natural' }
+            }
+          end: '\''
+          applyEndPatternLast: 1
+          patterns:
+            [
+              {
+                match: '\'\''
+                name: 'constant.character.escape.natural'
+              }
+            ]
+        }
+        {
+          name: string.natural
+          begin: '([uU]?)\"'
+          beginCaptures:
+            {
+              '1': { name: 'punctuation.definition.string.unicode.natural' }
+            }
+          end: '\"'
+          applyEndPatternLast: 1
+          patterns:
+            [
+              {
+                match: '\"\"'
+                name: 'constant.character.escape.natural'
+              }
+            ]
+
+        }
+        {
+
+        }
+        {
+          name: 'string.unicode.hex.natural'
+          match: '(?i:(uh)\'[0-9a-f]+\')'
+          captures:
+            {
+              '1': { name: 'punctuation.definition.string.unicode.natural' }
+            }
+        }
+      ]

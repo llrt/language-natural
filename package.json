@@ -7,7 +7,7 @@
   "repository": "https://github.com/llrt/language-natural",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.4.0"
+    "atom": ">=1.6.0"
   },
   "dependencies": {}
 }
