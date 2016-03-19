@@ -1,0 +1,13 @@
+{
+  "name": "language-natural",
+  "version": "0.1.0",
+  "private": false,
+  "author": "llrt <leandroloriato@gmail.com>",
+  "description": "Add syntax highlighting and snippets to Natural files in Atom",
+  "repository": "https://github.com/llrt/language-natural",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.4.0"
+  },
+  "dependencies": {}
+}
