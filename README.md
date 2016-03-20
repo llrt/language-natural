@@ -7,9 +7,9 @@ This plugin is an Atom's port of the great [Unnatural Sublime Package](https://g
 
 ## Install
 
-Install the package language-rust in Atom (Preferences->Packages) or Atom's package manager from a shell:
+Install the package language-natural in Atom (Preferences->Packages) or Atom's package manager from a shell:
 
-`$ apm install language-rust`
+`$ apm install language-natural`
 
 
 ## Links
