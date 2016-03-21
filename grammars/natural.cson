@@ -3,22 +3,22 @@ scopeName: 'source.natural'
 fileTypes: [ 'nat', 'nsp', 'nsn', 'nsl' ]
 
 patterns: [
-  include: '#wrong',
-  include: '#comments',
-  include: '#hash_vars',
-  include: '#numbers',
-  include: '#strings',
-  include: '#data_definition',
-  include: '#subroutine',
-  include: '#operators',
-  include: '#keywords',
-  include: '#date_and_time',
-  include: '#labels',
-  include: '#placeholder',
-  include: '#trailing_space',
-  include: '#keys',
-  include: '#system_vars',
-  include: '#variable_modifier'
+  { include: '#wrong' },
+  { include: '#comments' },
+  { include: '#hash_vars' },
+  { include: '#numbers' },
+  { include: '#strings' },
+  { include: '#data_definition' },
+  { include: '#subroutine' },
+  { include: '#operators' },
+  { include: '#keywords' },
+  { include: '#date_and_time' },
+  { include: '#labels' },
+  { include: '#placeholder' },
+  { include: '#trailing_space' },
+  { include: '#keys' },
+  { include: '#system_vars' },
+  { include: '#variable_modifier' }
 ]
 
 repository: {
@@ -106,19 +106,19 @@ repository: {
       '0': { name: 'keyword.natural' }
     },
     patterns: [
-      include: '#comments',
-      include: '#data_definition_keywords',
-      include: '#external_storage_area',
-      include: '#variable_level',
-      include: '#variable_modifier',
-      include: '#variable_type',
-      include: '#view_definition',
-      include: '#system_vars',
-      include: '#hash_vars',
-      include: '#placeholder',
-      include: '#numbers',
-      include: '#strings',
-      include: '#wrong'
+      { include: '#comments' },
+      { include: '#data_definition_keywords' },
+      { include: '#external_storage_area' },
+      { include: '#variable_level' },
+      { include: '#variable_modifier' },
+      { include: '#variable_type' },
+      { include: '#view_definition' },
+      { include: '#system_vars' },
+      { include: '#hash_vars' },
+      { include: '#placeholder' },
+      { include: '#numbers' },
+      { include: '#strings' },
+      { include: '#wrong' }
     ]
   },
 
@@ -177,7 +177,7 @@ repository: {
 
   keywords: {
     name: 'keyword.natural',
-    match: '(?<![\\w-])
+    match: '(?<![\\w-])\
     (?i:year|xml|write|work|with|window|while|where|when|view|via|\
     vertically|vert|variables|variable|vargraphic|values|value|val|\
     using|user|used|upper|upload|update|until|unknown|unique|union|\
