@@ -2,7 +2,7 @@
 
 This is a plugin that provide [Software AG's Natural](http://www.softwareag.com/corporate/products/adabas_natural/natural/overview/) language support for Atom editor.
 
-This plugin is an Atom's port of the awesome [Unnatural Sublime Package](https://github.com/andref/Unnatural-Sublime-Package).
+This plugin is essentially an Atom's port of the awesome [Unnatural Sublime Package](https://github.com/andref/Unnatural-Sublime-Package).
 
 
 ## Install
