@@ -1,6 +1,6 @@
 {
   "name": "language-natural",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Syntax highlighting and snippets for Natural in Atom",
   "license": "MIT",
   "engines": {
