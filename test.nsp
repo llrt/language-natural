@@ -2,7 +2,7 @@ DEFINE DATA
 LOCAL
 01 #X       (N03)
 01 REDEFINE #X
-  02 #X-A   (A03)
+   02 #X-A   (A03)
 01 #Y       (A20)
 END-DEFINE
 *
@@ -11,7 +11,7 @@ END-DEFINE
 *
 #Y = 'HELLO WORLD'
 FOR #1 1 #X
-  WRITE '=' #Y
+   WRITE '=' #Y
 END-FOR
 WRITE 'WROTE ' #Y #X-A ' TIMES'
 *

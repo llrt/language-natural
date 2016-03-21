@@ -1,0 +1,10 @@
+'.source.natural':
+  'editor':
+    'commentStart': '/*'
+    'increaseIndentPattern': '(?x)^(\\s*\
+    (?i:if|define\\s+subroutine|for|while|find|read|histogram|decide|\
+    on\s+error|sort|value)).*$'
+    'decreaseIndentPattern': '^\\s*(else|end-)\\b'
+    'softTabs': true
+    'tabLength': 3
+    'preferredLineLength': 72
